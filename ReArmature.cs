@@ -174,7 +174,7 @@ namespace ReArmature
         {
             if(newArmatureDictionary.TryGetValue(boneToAttach.Parent.Name, out var value))
             {
-                boneToAttach.Duplicate(value,false);
+                boneToAttach.Duplicate(value,false,null,false);
             }
             else
             {
